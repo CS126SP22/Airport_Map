@@ -1,11 +1,80 @@
 #include "graph.h"
 
-namespace path_finding {
 
-    Graph::Graph(bool weighted) : weighted(weighted), directed(false) {
+
+namespace path_finding {
+    const Vertex Graph::InvalidVertex = "_INVALIDVERTEX";
+    const int Graph::InvalidWeight = INT_MIN;
+    const string Graph:: InvalidLabel = "_INVALIDLABEL";
+    const Edge Graph::InvalidEdge = Edge(Graph::InvalidVertex, Graph::InvalidVertex, Graph::InvalidWeight, Graph::InvalidLabel);
+
+
+    Graph::Graph(bool weighted) : weighted(weighted),directed(false),random(Random(0))
+    {
     }
 
-    Graph::Graph(bool weighted, bool directed) : weighted(weighted), directed(directed) {
+    Graph::Graph(bool weighted, bool directed) : weighted(weighted),directed(directed),random(Random(0))
+    {
+    }
+
+    Graph::Graph(bool weighted, int numVertices, unsigned long seed)
+            :weighted(weighted),
+             directed(false),
+             random(Random(seed))
+    {
+        if (numVertices < 2)
+        {
+            error("numVertices too low");
+            exit(1);
+        }
+
+        vector<Vertex> vertices;
+        for (int i = 0; i < numVertices; i++)
+        {
+            insertVertex(to_string(i));
+            vertices.push_back(to_string(i));
+        }
+
+        // make sure all vertices are connected
+        random.shuffle(vertices);
+        Vertex cur = vertices[0];
+        for (size_t i = 0; i < vertices.size() - 1; ++i)
+        {
+            Vertex next = vertices[i + 1];
+            insertEdge(cur, next);
+            if (weighted)
+            {
+                int weight = random.nextInt();
+                setEdgeWeight(cur, next, weight);
+            }
+            cur = next;
+        }
+
+        // keep the graph from being overpopulated with edges,
+        //  while still maintaining a little randomness
+        int numFailures = 0;
+        int idx = 0;
+        random.shuffle(vertices);
+        while (numFailures < 2)
+        {
+            if (!insertEdge(vertices[idx], vertices[idx + 1]))
+            {
+                ++numFailures;
+            }
+            else
+            {
+                // if insertEdge() succeeded...
+                if (weighted)
+                    setEdgeWeight(vertices[idx], vertices[idx + 1],
+                                  random.nextInt());
+                ++idx;
+                if (idx >= numVertices - 2)
+                {
+                    idx = 0;
+                    random.shuffle(vertices);
+                }
+            }
+        }
     }
 
 
