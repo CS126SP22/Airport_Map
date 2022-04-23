@@ -10,4 +10,4 @@ add_executable(final_project_ws9922
         include/graph.h
         include/random.h
         src/graph.cpp
-        src/random.cpp src/dijkstra.cpp include/dijkstra.h)
+        src/random.cpp src/dijkstra.cpp include/dijkstra.h src/astar.cpp include/astar.h)

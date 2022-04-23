@@ -93,6 +93,13 @@ build CMakeFiles/final_project_ws9922.dir/src/dijkstra.cpp.o: CXX_COMPILER__fina
   OBJECT_DIR = CMakeFiles/final_project_ws9922.dir
   OBJECT_FILE_DIR = CMakeFiles/final_project_ws9922.dir/src
 
+build CMakeFiles/final_project_ws9922.dir/src/astar.cpp.o: CXX_COMPILER__final_project_ws9922_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/astar.cpp || cmake_object_order_depends_target_final_project_ws9922
+  DEP_FILE = CMakeFiles/final_project_ws9922.dir/src/astar.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14
+  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include
+  OBJECT_DIR = CMakeFiles/final_project_ws9922.dir
+  OBJECT_FILE_DIR = CMakeFiles/final_project_ws9922.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target final_project_ws9922
@@ -101,7 +108,7 @@ build CMakeFiles/final_project_ws9922.dir/src/dijkstra.cpp.o: CXX_COMPILER__fina
 #############################################
 # Link the executable final_project_ws9922
 
-build final_project_ws9922: CXX_EXECUTABLE_LINKER__final_project_ws9922_Debug CMakeFiles/final_project_ws9922.dir/src/graph.cpp.o CMakeFiles/final_project_ws9922.dir/src/random.cpp.o CMakeFiles/final_project_ws9922.dir/src/dijkstra.cpp.o
+build final_project_ws9922: CXX_EXECUTABLE_LINKER__final_project_ws9922_Debug CMakeFiles/final_project_ws9922.dir/src/graph.cpp.o CMakeFiles/final_project_ws9922.dir/src/random.cpp.o CMakeFiles/final_project_ws9922.dir/src/dijkstra.cpp.o CMakeFiles/final_project_ws9922.dir/src/astar.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
   OBJECT_DIR = CMakeFiles/final_project_ws9922.dir
   POST_BUILD = :
