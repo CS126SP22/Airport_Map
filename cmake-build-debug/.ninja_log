@@ -1,0 +1,10 @@
+# ninja log v5
+1	159	1651267587013935360	build.ninja	8f64bb56925688af
+0	19	1650946637415776886	Debug/path-finding/path-finding.app/Contents/Resources/CinderApp.icns	b7b0236f0608da08
+20	322	1650946637711284241	CMakeFiles/path-finding.dir/apps/cinder_app_main.cc.o	8b40f5cdb27d4a7c
+1	19	1651267610097242700	Debug/path-finder/path-finder.app/Contents/Resources/CinderApp.icns	762aafe1f7a5ec28
+19	3301	1651267613353331723	CMakeFiles/path-finder.dir/src/core/AStarAlgorithm.cc.o	aa41047509b6f1bd
+20	3329	1651267613383056181	CMakeFiles/path-finder.dir/src/visualizer/graph.cc.o	40b485c5d2e908a4
+20	3555	1651267613611220150	CMakeFiles/path-finder.dir/src/visualizer/path_finding_app.cc.o	18c71db962b864d2
+19	3605	1651267613664167587	CMakeFiles/path-finder.dir/apps/cinder_app_main.cc.o	ab55e6102581e0cf
+3605	4948	1651267615015345355	Debug/path-finder/path-finder.app/Contents/MacOS/path-finder	6a6285abbbb6486b

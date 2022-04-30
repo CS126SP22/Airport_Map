@@ -14,6 +14,40 @@
 # EXTERNAL cache entries
 ########################
 
+//Build Cinder as a shared library. 
+BUILD_SHARED_LIBS:BOOL=OFF
+
+//Copy assets to a folder next to the application. Default is OFF,
+// and a symlink is created that points to the original assets
+// folder.
+CINDER_COPY_ASSETS:BOOL=OFF
+
+//Build Cinder without AntTweakBar support. 
+CINDER_DISABLE_ANTTWEAKBAR:BOOL=OFF
+
+//Build Cinder without audio support. 
+CINDER_DISABLE_AUDIO:BOOL=OFF
+
+//Build Cinder without imgui support. 
+CINDER_DISABLE_IMGUI:BOOL=OFF
+
+//Build Cinder without video support. 
+CINDER_DISABLE_VIDEO:BOOL=OFF
+
+//Enable headless rendering. Valid options: egl
+CINDER_HEADLESS_GL:STRING=
+
+//Target platform to build for. Default will match the current
+// OS. Vaid options: linux, macosx, msw, ios, android
+CINDER_TARGET:STRING=macosx
+
+//Target GL for the system. Valid options: ogl, es2, es3, es31,
+// es32, es2-rpi
+CINDER_TARGET_GL:STRING=
+
+//Print verbose build configuration messages. 
+CINDER_VERBOSE:BOOL=OFF
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -140,7 +174,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=final_project_ws9922
+CMAKE_PROJECT_NAME:STATIC=path-finding
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -204,6 +238,29 @@ CMAKE_STRIP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Directory under which to collect all populated content
+FETCHCONTENT_BASE_DIR:PATH=/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps
+
+//Disables all attempts to download or update content and assumes
+// source dirs already exist
+FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
+
+//Enables QUIET option for all content population
+FETCHCONTENT_QUIET:BOOL=ON
+
+//When not empty, overrides where to find pre-populated content
+// for catch2
+FETCHCONTENT_SOURCE_DIR_CATCH2:PATH=
+
+//Enables UPDATE_DISCONNECTED behavior for all content population
+FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of catch2
+FETCHCONTENT_UPDATES_DISCONNECTED_CATCH2:BOOL=OFF
+
+//Git command line client
+GIT_EXECUTABLE:FILEPATH=/usr/bin/git
+
 //Value Computed by CMake
 final_project_ws9922_BINARY_DIR:STATIC=/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug
 
@@ -212,6 +269,15 @@ final_project_ws9922_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 final_project_ws9922_SOURCE_DIR:STATIC=/Users/wangshuo/Cinder/my-projects/final-project-ws9922
+
+//Value Computed by CMake
+path-finding_BINARY_DIR:STATIC=/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug
+
+//Value Computed by CMake
+path-finding_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+path-finding_SOURCE_DIR:STATIC=/Users/wangshuo/Cinder/my-projects/final-project-ws9922
 
 
 ########################
@@ -349,4 +415,6 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GIT_EXECUTABLE
+GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 

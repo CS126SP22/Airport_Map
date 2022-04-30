@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "path-finding",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "path-finder::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-path-finder-Debug-856650256d1915382a58.json",
+					"name" : "path-finder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "path-finder-tests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-path-finder-tests-Debug-525b6bab313732c88566.json",
+					"name" : "path-finder-tests",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug",
+		"source" : "/Users/wangshuo/Cinder/my-projects/final-project-ws9922"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
