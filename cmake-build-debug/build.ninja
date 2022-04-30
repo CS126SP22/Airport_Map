@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: final_project_ws9922
+# Project: path-finding
 # Configurations: Debug
 # =============================================================================
 
@@ -64,60 +64,139 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target final_project_ws9922
+# Object build statements for EXECUTABLE target path-finder-tests
+
+build Debug/path-finder-tests/path-finder-tests.app/Contents/Resources/CinderApp.icns: COPY_OSX_CONTENT /Users/wangshuo/Cinder/samples/data/CinderApp.icns
 
 
 #############################################
-# Order-only phony target for final_project_ws9922
+# Order-only phony target for path-finder-tests
 
-build cmake_object_order_depends_target_final_project_ws9922: phony || CMakeFiles/final_project_ws9922.dir
+build cmake_object_order_depends_target_path-finder-tests: phony || Debug/path-finder-tests/path-finder-tests.app/Contents/Resources/CinderApp.icns
 
-build CMakeFiles/final_project_ws9922.dir/src/graph.cpp.o: CXX_COMPILER__final_project_ws9922_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/graph.cpp || cmake_object_order_depends_target_final_project_ws9922
-  DEP_FILE = CMakeFiles/final_project_ws9922.dir/src/graph.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14
-  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include
-  OBJECT_DIR = CMakeFiles/final_project_ws9922.dir
-  OBJECT_FILE_DIR = CMakeFiles/final_project_ws9922.dir/src
+build CMakeFiles/path-finder-tests.dir/tests/test_main.cc.o: CXX_COMPILER__path-finder-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/tests/test_main.cc || cmake_object_order_depends_target_path-finder-tests
+  DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
+  DEP_FILE = CMakeFiles/path-finder-tests.dir/tests/test_main.cc.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
+  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/wangshuo/Cinder/include
+  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finder-tests.dir/tests
 
-build CMakeFiles/final_project_ws9922.dir/src/random.cpp.o: CXX_COMPILER__final_project_ws9922_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/random.cpp || cmake_object_order_depends_target_final_project_ws9922
-  DEP_FILE = CMakeFiles/final_project_ws9922.dir/src/random.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14
-  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include
-  OBJECT_DIR = CMakeFiles/final_project_ws9922.dir
-  OBJECT_FILE_DIR = CMakeFiles/final_project_ws9922.dir/src
+build CMakeFiles/path-finder-tests.dir/src/core/AStarAlgorithm.cc.o: CXX_COMPILER__path-finder-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/core/AStarAlgorithm.cc || cmake_object_order_depends_target_path-finder-tests
+  DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
+  DEP_FILE = CMakeFiles/path-finder-tests.dir/src/core/AStarAlgorithm.cc.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
+  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/wangshuo/Cinder/include
+  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finder-tests.dir/src/core
 
-build CMakeFiles/final_project_ws9922.dir/src/dijkstra.cpp.o: CXX_COMPILER__final_project_ws9922_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/dijkstra.cpp || cmake_object_order_depends_target_final_project_ws9922
-  DEP_FILE = CMakeFiles/final_project_ws9922.dir/src/dijkstra.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14
-  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include
-  OBJECT_DIR = CMakeFiles/final_project_ws9922.dir
-  OBJECT_FILE_DIR = CMakeFiles/final_project_ws9922.dir/src
+build CMakeFiles/path-finder-tests.dir/src/visualizer/path_finding_app.cc.o: CXX_COMPILER__path-finder-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/path_finding_app.cc || cmake_object_order_depends_target_path-finder-tests
+  DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
+  DEP_FILE = CMakeFiles/path-finder-tests.dir/src/visualizer/path_finding_app.cc.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
+  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/wangshuo/Cinder/include
+  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finder-tests.dir/src/visualizer
 
-build CMakeFiles/final_project_ws9922.dir/src/astar.cpp.o: CXX_COMPILER__final_project_ws9922_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/astar.cpp || cmake_object_order_depends_target_final_project_ws9922
-  DEP_FILE = CMakeFiles/final_project_ws9922.dir/src/astar.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14
-  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include
-  OBJECT_DIR = CMakeFiles/final_project_ws9922.dir
-  OBJECT_FILE_DIR = CMakeFiles/final_project_ws9922.dir/src
+build CMakeFiles/path-finder-tests.dir/src/visualizer/graph.cc.o: CXX_COMPILER__path-finder-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/graph.cc || cmake_object_order_depends_target_path-finder-tests
+  DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
+  DEP_FILE = CMakeFiles/path-finder-tests.dir/src/visualizer/graph.cc.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
+  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/wangshuo/Cinder/include
+  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finder-tests.dir/src/visualizer
+
+build CMakeFiles/path-finder-tests.dir/tests/test_AStar.cc.o: CXX_COMPILER__path-finder-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/tests/test_AStar.cc || cmake_object_order_depends_target_path-finder-tests
+  DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
+  DEP_FILE = CMakeFiles/path-finder-tests.dir/tests/test_AStar.cc.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
+  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/wangshuo/Cinder/include
+  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finder-tests.dir/tests
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target final_project_ws9922
+# Link build statements for EXECUTABLE target path-finder-tests
 
 
 #############################################
-# Link the executable final_project_ws9922
+# Link the executable Debug/path-finder-tests/path-finder-tests.app/Contents/MacOS/path-finder-tests
 
-build final_project_ws9922: CXX_EXECUTABLE_LINKER__final_project_ws9922_Debug CMakeFiles/final_project_ws9922.dir/src/graph.cpp.o CMakeFiles/final_project_ws9922.dir/src/random.cpp.o CMakeFiles/final_project_ws9922.dir/src/dijkstra.cpp.o CMakeFiles/final_project_ws9922.dir/src/astar.cpp.o
+build Debug/path-finder-tests/path-finder-tests.app/Contents/MacOS/path-finder-tests: CXX_EXECUTABLE_LINKER__path-finder-tests_Debug CMakeFiles/path-finder-tests.dir/tests/test_main.cc.o CMakeFiles/path-finder-tests.dir/src/core/AStarAlgorithm.cc.o CMakeFiles/path-finder-tests.dir/src/visualizer/path_finding_app.cc.o CMakeFiles/path-finder-tests.dir/src/visualizer/graph.cc.o CMakeFiles/path-finder-tests.dir/tests/test_AStar.cc.o | /Users/wangshuo/Cinder/lib/macosx/Debug/libcinder.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  OBJECT_DIR = CMakeFiles/final_project_ws9922.dir
+  LINK_LIBRARIES = /Users/wangshuo/Cinder/lib/macosx/Debug/libcinder.a  -framework  Cocoa  -framework  OpenGL  -framework  AudioToolbox  -framework  AVFoundation  -framework  AudioUnit  -framework  CoreAudio  -framework  CoreMedia  -framework  CoreVideo  -framework  Accelerate  -framework  IOSurface  -framework  IOKit
+  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = final_project_ws9922
-  TARGET_PDB = final_project_ws9922.dbg
+  TARGET_FILE = Debug/path-finder-tests/path-finder-tests.app/Contents/MacOS/path-finder-tests
+  TARGET_PDB = path-finder-tests.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target path-finder
+
+build Debug/path-finder/path-finder.app/Contents/Resources/CinderApp.icns: COPY_OSX_CONTENT /Users/wangshuo/Cinder/samples/data/CinderApp.icns
+
+
+#############################################
+# Order-only phony target for path-finder
+
+build cmake_object_order_depends_target_path-finder: phony || Debug/path-finder/path-finder.app/Contents/Resources/CinderApp.icns
+
+build CMakeFiles/path-finder.dir/apps/cinder_app_main.cc.o: CXX_COMPILER__path-finder_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/apps/cinder_app_main.cc || cmake_object_order_depends_target_path-finder
+  DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
+  DEP_FILE = CMakeFiles/path-finder.dir/apps/cinder_app_main.cc.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
+  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -isystem /Users/wangshuo/Cinder/include
+  OBJECT_DIR = CMakeFiles/path-finder.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finder.dir/apps
+
+build CMakeFiles/path-finder.dir/src/core/AStarAlgorithm.cc.o: CXX_COMPILER__path-finder_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/core/AStarAlgorithm.cc || cmake_object_order_depends_target_path-finder
+  DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
+  DEP_FILE = CMakeFiles/path-finder.dir/src/core/AStarAlgorithm.cc.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
+  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -isystem /Users/wangshuo/Cinder/include
+  OBJECT_DIR = CMakeFiles/path-finder.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finder.dir/src/core
+
+build CMakeFiles/path-finder.dir/src/visualizer/path_finding_app.cc.o: CXX_COMPILER__path-finder_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/path_finding_app.cc || cmake_object_order_depends_target_path-finder
+  DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
+  DEP_FILE = CMakeFiles/path-finder.dir/src/visualizer/path_finding_app.cc.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
+  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -isystem /Users/wangshuo/Cinder/include
+  OBJECT_DIR = CMakeFiles/path-finder.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finder.dir/src/visualizer
+
+build CMakeFiles/path-finder.dir/src/visualizer/graph.cc.o: CXX_COMPILER__path-finder_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/graph.cc || cmake_object_order_depends_target_path-finder
+  DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
+  DEP_FILE = CMakeFiles/path-finder.dir/src/visualizer/graph.cc.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
+  INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -isystem /Users/wangshuo/Cinder/include
+  OBJECT_DIR = CMakeFiles/path-finder.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finder.dir/src/visualizer
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target path-finder
+
+
+#############################################
+# Link the executable Debug/path-finder/path-finder.app/Contents/MacOS/path-finder
+
+build Debug/path-finder/path-finder.app/Contents/MacOS/path-finder: CXX_EXECUTABLE_LINKER__path-finder_Debug CMakeFiles/path-finder.dir/apps/cinder_app_main.cc.o CMakeFiles/path-finder.dir/src/core/AStarAlgorithm.cc.o CMakeFiles/path-finder.dir/src/visualizer/path_finding_app.cc.o CMakeFiles/path-finder.dir/src/visualizer/graph.cc.o | /Users/wangshuo/Cinder/lib/macosx/Debug/libcinder.a
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  LINK_LIBRARIES = /Users/wangshuo/Cinder/lib/macosx/Debug/libcinder.a  -framework  Cocoa  -framework  OpenGL  -framework  AudioToolbox  -framework  AVFoundation  -framework  AudioUnit  -framework  CoreAudio  -framework  CoreMedia  -framework  CoreVideo  -framework  Accelerate  -framework  IOSurface  -framework  IOKit
+  OBJECT_DIR = CMakeFiles/path-finder.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Debug/path-finder/path-finder.app/Contents/MacOS/path-finder
+  TARGET_PDB = path-finder.dbg
 
 # =============================================================================
 # Target aliases.
+
+build path-finder: phony Debug/path-finder/path-finder.app/Contents/MacOS/path-finder
+
+build path-finder-tests: phony Debug/path-finder-tests/path-finder-tests.app/Contents/MacOS/path-finder-tests
 
 # =============================================================================
 # Folder targets.
@@ -127,7 +206,7 @@ build final_project_ws9922: CXX_EXECUTABLE_LINKER__final_project_ws9922_Debug CM
 #############################################
 # Folder: /Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug
 
-build all: phony final_project_ws9922
+build all: phony Debug/path-finder-tests/path-finder-tests.app/Contents/MacOS/path-finder-tests Debug/path-finder/path-finder.app/Contents/MacOS/path-finder
 
 # =============================================================================
 # Built-in targets
@@ -136,14 +215,14 @@ build all: phony final_project_ws9922
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeParseArguments.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/MacOSXBundleInfo.plist.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /Users/wangshuo/Cinder/cmake-build-debug/lib/macosx/Debug/cinderTargets.cmake /Users/wangshuo/Cinder/lib/macosx/Debug/cinderConfig.cmake /Users/wangshuo/Cinder/proj/cmake/configure.cmake /Users/wangshuo/Cinder/proj/cmake/modules/cinderMakeApp.cmake /Users/wangshuo/Cinder/proj/cmake/utilities.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeParseArguments.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/MacOSXBundleInfo.plist.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /Users/wangshuo/Cinder/cmake-build-debug/lib/macosx/Debug/cinderTargets.cmake /Users/wangshuo/Cinder/lib/macosx/Debug/cinderConfig.cmake /Users/wangshuo/Cinder/proj/cmake/configure.cmake /Users/wangshuo/Cinder/proj/cmake/modules/cinderMakeApp.cmake /Users/wangshuo/Cinder/proj/cmake/utilities.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################
