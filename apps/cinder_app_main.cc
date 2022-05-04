@@ -1,6 +1,6 @@
 #include <visualizer/path_finding_app.h>
 
-using path_finding::visualizer::PathFindingApp;
+using path_finding::PathFindingApp;
 
 void prepareSettings(PathFindingApp::Settings* settings) {
     settings->setResizable(false);

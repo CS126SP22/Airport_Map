@@ -1,4 +1,4 @@
 /Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/CMakeFiles/path-finder-tests.dir
-/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/CMakeFiles/path-finder.dir
+/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/CMakeFiles/path-finding-tests.dir
+/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/CMakeFiles/path-finding.dir

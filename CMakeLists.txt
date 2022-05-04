@@ -47,26 +47,24 @@ endif()
 get_filename_component(CINDER_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../../" ABSOLUTE)
 get_filename_component(APP_PATH "${CMAKE_CURRENT_SOURCE_DIR}/" ABSOLUTE)
 
-list(APPEND CORE_SOURCE_FILES src/core/AStarAlgorithm.cc)
-
-
 include("${CINDER_PATH}/proj/cmake/modules/cinderMakeApp.cmake")
 
 list(APPEND SOURCE_FILES    ${CORE_SOURCE_FILES}
+        src/core/astar.cc
         src/visualizer/path_finding_app.cc
-        src/visualizer/graph.cc)
+        src/visualizer/map.cc)
 
 list(APPEND TEST_FILES tests/test_AStar.cc)
 
 ci_make_app(
-        APP_NAME        path-finder
+        APP_NAME        path-finding
         CINDER_PATH     ${CINDER_PATH}
         SOURCES         apps/cinder_app_main.cc ${SOURCE_FILES}
         INCLUDES        include
 )
 
 ci_make_app(
-        APP_NAME        path-finder-tests
+        APP_NAME        path-finding-tests
         CINDER_PATH     ${CINDER_PATH}
         SOURCES         tests/test_main.cc ${SOURCE_FILES} ${TEST_FILES}
         INCLUDES        include
@@ -74,5 +72,5 @@ ci_make_app(
 )
 
 if(MSVC)
-    set_property(TARGET naive-bayes-test APPEND_STRING PROPERTY LINK_FLAGS " /SUBSYSTEM:CONSOLE")
+    set_property(TARGET path-finding-test APPEND_STRING PROPERTY LINK_FLAGS " /SUBSYSTEM:CONSOLE")
 endif()
