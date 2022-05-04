@@ -64,139 +64,139 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target path-finder-tests
+# Object build statements for EXECUTABLE target path-finding-tests
 
-build Debug/path-finder-tests/path-finder-tests.app/Contents/Resources/CinderApp.icns: COPY_OSX_CONTENT /Users/wangshuo/Cinder/samples/data/CinderApp.icns
+build Debug/path-finding-tests/path-finding-tests.app/Contents/Resources/CinderApp.icns: COPY_OSX_CONTENT /Users/wangshuo/Cinder/samples/data/CinderApp.icns
 
 
 #############################################
-# Order-only phony target for path-finder-tests
+# Order-only phony target for path-finding-tests
 
-build cmake_object_order_depends_target_path-finder-tests: phony || Debug/path-finder-tests/path-finder-tests.app/Contents/Resources/CinderApp.icns
+build cmake_object_order_depends_target_path-finding-tests: phony || Debug/path-finding-tests/path-finding-tests.app/Contents/Resources/CinderApp.icns
 
-build CMakeFiles/path-finder-tests.dir/tests/test_main.cc.o: CXX_COMPILER__path-finder-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/tests/test_main.cc || cmake_object_order_depends_target_path-finder-tests
+build CMakeFiles/path-finding-tests.dir/tests/test_main.cc.o: CXX_COMPILER__path-finding-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/tests/test_main.cc || cmake_object_order_depends_target_path-finding-tests
   DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
-  DEP_FILE = CMakeFiles/path-finder-tests.dir/tests/test_main.cc.o.d
+  DEP_FILE = CMakeFiles/path-finding-tests.dir/tests/test_main.cc.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
   INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/wangshuo/Cinder/include
-  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
-  OBJECT_FILE_DIR = CMakeFiles/path-finder-tests.dir/tests
+  OBJECT_DIR = CMakeFiles/path-finding-tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finding-tests.dir/tests
 
-build CMakeFiles/path-finder-tests.dir/src/core/AStarAlgorithm.cc.o: CXX_COMPILER__path-finder-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/core/AStarAlgorithm.cc || cmake_object_order_depends_target_path-finder-tests
+build CMakeFiles/path-finding-tests.dir/src/core/astar.cc.o: CXX_COMPILER__path-finding-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/core/astar.cc || cmake_object_order_depends_target_path-finding-tests
   DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
-  DEP_FILE = CMakeFiles/path-finder-tests.dir/src/core/AStarAlgorithm.cc.o.d
+  DEP_FILE = CMakeFiles/path-finding-tests.dir/src/core/astar.cc.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
   INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/wangshuo/Cinder/include
-  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
-  OBJECT_FILE_DIR = CMakeFiles/path-finder-tests.dir/src/core
+  OBJECT_DIR = CMakeFiles/path-finding-tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finding-tests.dir/src/core
 
-build CMakeFiles/path-finder-tests.dir/src/visualizer/path_finding_app.cc.o: CXX_COMPILER__path-finder-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/path_finding_app.cc || cmake_object_order_depends_target_path-finder-tests
+build CMakeFiles/path-finding-tests.dir/src/visualizer/path_finding_app.cc.o: CXX_COMPILER__path-finding-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/path_finding_app.cc || cmake_object_order_depends_target_path-finding-tests
   DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
-  DEP_FILE = CMakeFiles/path-finder-tests.dir/src/visualizer/path_finding_app.cc.o.d
+  DEP_FILE = CMakeFiles/path-finding-tests.dir/src/visualizer/path_finding_app.cc.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
   INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/wangshuo/Cinder/include
-  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
-  OBJECT_FILE_DIR = CMakeFiles/path-finder-tests.dir/src/visualizer
+  OBJECT_DIR = CMakeFiles/path-finding-tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finding-tests.dir/src/visualizer
 
-build CMakeFiles/path-finder-tests.dir/src/visualizer/graph.cc.o: CXX_COMPILER__path-finder-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/graph.cc || cmake_object_order_depends_target_path-finder-tests
+build CMakeFiles/path-finding-tests.dir/src/visualizer/map.cc.o: CXX_COMPILER__path-finding-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/map.cc || cmake_object_order_depends_target_path-finding-tests
   DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
-  DEP_FILE = CMakeFiles/path-finder-tests.dir/src/visualizer/graph.cc.o.d
+  DEP_FILE = CMakeFiles/path-finding-tests.dir/src/visualizer/map.cc.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
   INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/wangshuo/Cinder/include
-  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
-  OBJECT_FILE_DIR = CMakeFiles/path-finder-tests.dir/src/visualizer
+  OBJECT_DIR = CMakeFiles/path-finding-tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finding-tests.dir/src/visualizer
 
-build CMakeFiles/path-finder-tests.dir/tests/test_AStar.cc.o: CXX_COMPILER__path-finder-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/tests/test_AStar.cc || cmake_object_order_depends_target_path-finder-tests
+build CMakeFiles/path-finding-tests.dir/tests/test_AStar.cc.o: CXX_COMPILER__path-finding-tests_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/tests/test_AStar.cc || cmake_object_order_depends_target_path-finding-tests
   DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
-  DEP_FILE = CMakeFiles/path-finder-tests.dir/tests/test_AStar.cc.o.d
+  DEP_FILE = CMakeFiles/path-finding-tests.dir/tests/test_AStar.cc.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
   INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug/_deps/catch2-src/single_include -isystem /Users/wangshuo/Cinder/include
-  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
-  OBJECT_FILE_DIR = CMakeFiles/path-finder-tests.dir/tests
+  OBJECT_DIR = CMakeFiles/path-finding-tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finding-tests.dir/tests
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target path-finder-tests
+# Link build statements for EXECUTABLE target path-finding-tests
 
 
 #############################################
-# Link the executable Debug/path-finder-tests/path-finder-tests.app/Contents/MacOS/path-finder-tests
+# Link the executable Debug/path-finding-tests/path-finding-tests.app/Contents/MacOS/path-finding-tests
 
-build Debug/path-finder-tests/path-finder-tests.app/Contents/MacOS/path-finder-tests: CXX_EXECUTABLE_LINKER__path-finder-tests_Debug CMakeFiles/path-finder-tests.dir/tests/test_main.cc.o CMakeFiles/path-finder-tests.dir/src/core/AStarAlgorithm.cc.o CMakeFiles/path-finder-tests.dir/src/visualizer/path_finding_app.cc.o CMakeFiles/path-finder-tests.dir/src/visualizer/graph.cc.o CMakeFiles/path-finder-tests.dir/tests/test_AStar.cc.o | /Users/wangshuo/Cinder/lib/macosx/Debug/libcinder.a
+build Debug/path-finding-tests/path-finding-tests.app/Contents/MacOS/path-finding-tests: CXX_EXECUTABLE_LINKER__path-finding-tests_Debug CMakeFiles/path-finding-tests.dir/tests/test_main.cc.o CMakeFiles/path-finding-tests.dir/src/core/astar.cc.o CMakeFiles/path-finding-tests.dir/src/visualizer/path_finding_app.cc.o CMakeFiles/path-finding-tests.dir/src/visualizer/map.cc.o CMakeFiles/path-finding-tests.dir/tests/test_AStar.cc.o | /Users/wangshuo/Cinder/lib/macosx/Debug/libcinder.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
   LINK_LIBRARIES = /Users/wangshuo/Cinder/lib/macosx/Debug/libcinder.a  -framework  Cocoa  -framework  OpenGL  -framework  AudioToolbox  -framework  AVFoundation  -framework  AudioUnit  -framework  CoreAudio  -framework  CoreMedia  -framework  CoreVideo  -framework  Accelerate  -framework  IOSurface  -framework  IOKit
-  OBJECT_DIR = CMakeFiles/path-finder-tests.dir
+  OBJECT_DIR = CMakeFiles/path-finding-tests.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Debug/path-finder-tests/path-finder-tests.app/Contents/MacOS/path-finder-tests
-  TARGET_PDB = path-finder-tests.dbg
+  TARGET_FILE = Debug/path-finding-tests/path-finding-tests.app/Contents/MacOS/path-finding-tests
+  TARGET_PDB = path-finding-tests.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target path-finder
+# Object build statements for EXECUTABLE target path-finding
 
-build Debug/path-finder/path-finder.app/Contents/Resources/CinderApp.icns: COPY_OSX_CONTENT /Users/wangshuo/Cinder/samples/data/CinderApp.icns
+build Debug/path-finding/path-finding.app/Contents/Resources/CinderApp.icns: COPY_OSX_CONTENT /Users/wangshuo/Cinder/samples/data/CinderApp.icns
 
 
 #############################################
-# Order-only phony target for path-finder
+# Order-only phony target for path-finding
 
-build cmake_object_order_depends_target_path-finder: phony || Debug/path-finder/path-finder.app/Contents/Resources/CinderApp.icns
+build cmake_object_order_depends_target_path-finding: phony || Debug/path-finding/path-finding.app/Contents/Resources/CinderApp.icns
 
-build CMakeFiles/path-finder.dir/apps/cinder_app_main.cc.o: CXX_COMPILER__path-finder_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/apps/cinder_app_main.cc || cmake_object_order_depends_target_path-finder
+build CMakeFiles/path-finding.dir/apps/cinder_app_main.cc.o: CXX_COMPILER__path-finding_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/apps/cinder_app_main.cc || cmake_object_order_depends_target_path-finding
   DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
-  DEP_FILE = CMakeFiles/path-finder.dir/apps/cinder_app_main.cc.o.d
+  DEP_FILE = CMakeFiles/path-finding.dir/apps/cinder_app_main.cc.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
   INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -isystem /Users/wangshuo/Cinder/include
-  OBJECT_DIR = CMakeFiles/path-finder.dir
-  OBJECT_FILE_DIR = CMakeFiles/path-finder.dir/apps
+  OBJECT_DIR = CMakeFiles/path-finding.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finding.dir/apps
 
-build CMakeFiles/path-finder.dir/src/core/AStarAlgorithm.cc.o: CXX_COMPILER__path-finder_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/core/AStarAlgorithm.cc || cmake_object_order_depends_target_path-finder
+build CMakeFiles/path-finding.dir/src/core/astar.cc.o: CXX_COMPILER__path-finding_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/core/astar.cc || cmake_object_order_depends_target_path-finding
   DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
-  DEP_FILE = CMakeFiles/path-finder.dir/src/core/AStarAlgorithm.cc.o.d
+  DEP_FILE = CMakeFiles/path-finding.dir/src/core/astar.cc.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
   INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -isystem /Users/wangshuo/Cinder/include
-  OBJECT_DIR = CMakeFiles/path-finder.dir
-  OBJECT_FILE_DIR = CMakeFiles/path-finder.dir/src/core
+  OBJECT_DIR = CMakeFiles/path-finding.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finding.dir/src/core
 
-build CMakeFiles/path-finder.dir/src/visualizer/path_finding_app.cc.o: CXX_COMPILER__path-finder_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/path_finding_app.cc || cmake_object_order_depends_target_path-finder
+build CMakeFiles/path-finding.dir/src/visualizer/path_finding_app.cc.o: CXX_COMPILER__path-finding_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/path_finding_app.cc || cmake_object_order_depends_target_path-finding
   DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
-  DEP_FILE = CMakeFiles/path-finder.dir/src/visualizer/path_finding_app.cc.o.d
+  DEP_FILE = CMakeFiles/path-finding.dir/src/visualizer/path_finding_app.cc.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
   INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -isystem /Users/wangshuo/Cinder/include
-  OBJECT_DIR = CMakeFiles/path-finder.dir
-  OBJECT_FILE_DIR = CMakeFiles/path-finder.dir/src/visualizer
+  OBJECT_DIR = CMakeFiles/path-finding.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finding.dir/src/visualizer
 
-build CMakeFiles/path-finder.dir/src/visualizer/graph.cc.o: CXX_COMPILER__path-finder_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/graph.cc || cmake_object_order_depends_target_path-finder
+build CMakeFiles/path-finding.dir/src/visualizer/map.cc.o: CXX_COMPILER__path-finding_Debug /Users/wangshuo/Cinder/my-projects/final-project-ws9922/src/visualizer/map.cc || cmake_object_order_depends_target_path-finding
   DEFINES = -DFT2_BUILD_LIBRARY -DFT_DEBUG_LEVEL_TRACE
-  DEP_FILE = CMakeFiles/path-finder.dir/src/visualizer/graph.cc.o.d
+  DEP_FILE = CMakeFiles/path-finding.dir/src/visualizer/map.cc.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wpedantic -Werror -std=c++17 -std=c++11
   INCLUDES = -I/Users/wangshuo/Cinder/my-projects/final-project-ws9922/include -isystem /Users/wangshuo/Cinder/include
-  OBJECT_DIR = CMakeFiles/path-finder.dir
-  OBJECT_FILE_DIR = CMakeFiles/path-finder.dir/src/visualizer
+  OBJECT_DIR = CMakeFiles/path-finding.dir
+  OBJECT_FILE_DIR = CMakeFiles/path-finding.dir/src/visualizer
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target path-finder
+# Link build statements for EXECUTABLE target path-finding
 
 
 #############################################
-# Link the executable Debug/path-finder/path-finder.app/Contents/MacOS/path-finder
+# Link the executable Debug/path-finding/path-finding.app/Contents/MacOS/path-finding
 
-build Debug/path-finder/path-finder.app/Contents/MacOS/path-finder: CXX_EXECUTABLE_LINKER__path-finder_Debug CMakeFiles/path-finder.dir/apps/cinder_app_main.cc.o CMakeFiles/path-finder.dir/src/core/AStarAlgorithm.cc.o CMakeFiles/path-finder.dir/src/visualizer/path_finding_app.cc.o CMakeFiles/path-finder.dir/src/visualizer/graph.cc.o | /Users/wangshuo/Cinder/lib/macosx/Debug/libcinder.a
+build Debug/path-finding/path-finding.app/Contents/MacOS/path-finding: CXX_EXECUTABLE_LINKER__path-finding_Debug CMakeFiles/path-finding.dir/apps/cinder_app_main.cc.o CMakeFiles/path-finding.dir/src/core/astar.cc.o CMakeFiles/path-finding.dir/src/visualizer/path_finding_app.cc.o CMakeFiles/path-finding.dir/src/visualizer/map.cc.o | /Users/wangshuo/Cinder/lib/macosx/Debug/libcinder.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
   LINK_LIBRARIES = /Users/wangshuo/Cinder/lib/macosx/Debug/libcinder.a  -framework  Cocoa  -framework  OpenGL  -framework  AudioToolbox  -framework  AVFoundation  -framework  AudioUnit  -framework  CoreAudio  -framework  CoreMedia  -framework  CoreVideo  -framework  Accelerate  -framework  IOSurface  -framework  IOKit
-  OBJECT_DIR = CMakeFiles/path-finder.dir
+  OBJECT_DIR = CMakeFiles/path-finding.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Debug/path-finder/path-finder.app/Contents/MacOS/path-finder
-  TARGET_PDB = path-finder.dbg
+  TARGET_FILE = Debug/path-finding/path-finding.app/Contents/MacOS/path-finding
+  TARGET_PDB = path-finding.dbg
 
 # =============================================================================
 # Target aliases.
 
-build path-finder: phony Debug/path-finder/path-finder.app/Contents/MacOS/path-finder
+build path-finding: phony Debug/path-finding/path-finding.app/Contents/MacOS/path-finding
 
-build path-finder-tests: phony Debug/path-finder-tests/path-finder-tests.app/Contents/MacOS/path-finder-tests
+build path-finding-tests: phony Debug/path-finding-tests/path-finding-tests.app/Contents/MacOS/path-finding-tests
 
 # =============================================================================
 # Folder targets.
@@ -206,7 +206,7 @@ build path-finder-tests: phony Debug/path-finder-tests/path-finder-tests.app/Con
 #############################################
 # Folder: /Users/wangshuo/Cinder/my-projects/final-project-ws9922/cmake-build-debug
 
-build all: phony Debug/path-finder-tests/path-finder-tests.app/Contents/MacOS/path-finder-tests Debug/path-finder/path-finder.app/Contents/MacOS/path-finder
+build all: phony Debug/path-finding-tests/path-finding-tests.app/Contents/MacOS/path-finding-tests Debug/path-finding/path-finding.app/Contents/MacOS/path-finding
 
 # =============================================================================
 # Built-in targets
